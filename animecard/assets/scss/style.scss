@@ -1,0 +1,129 @@
+/*meta*/
+*{
+    margin: 0;
+    padding: 0;
+    }
+%center-element{
+    margin-left: auto;
+    margin-right: auto;
+}
+%color-bg{
+    background-color: brown;
+}
+/*fin meta*/
+body{
+    background-color: lightgrey;
+    .card{
+    overflow: hidden;
+    background-color: white;
+    width: 600px;
+    height: 850px;
+    box-shadow: 0px 0px 0px 1px grey; 
+    margin-top: 20px;
+    @extend %center-element;
+    font-family: open sans;
+    &:hover{
+        box-shadow: 0px 0px 20px 5px grey;
+    }
+    &:hover section{
+        transform: translateY(-180px);
+    }
+    &:hover img{
+        transform: scale(1.2);
+        filter: opacity(0.50);
+    }
+        header{
+            @extend %center-element;
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+            nav{
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                z-index: 2;
+                width: 11%;
+                top: -94%;
+                left: 82%;
+                padding: 12px;
+                color: white;
+                font-size: 150%;
+                @extend %color-bg;
+                border-radius: 50%;
+            }
+            img{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                transition: all 0.3s linear;
+                }
+        }
+        section{
+            @extend %center-element;
+            background-color: white;
+            height: 25%;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s linear;
+            .photos{
+                position: relative;
+                width: 17%;
+                top: -20%;
+                font-size: 150%;
+                padding: 12px;
+                padding-right: 19px;
+                z-index: 2;
+                color: white;
+                @extend %color-bg;
+            }
+            article{
+                position: relative;
+                width: 80%;
+                padding-top: 20px;
+                @extend %center-element;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-row-gap: 20px;
+                .row1{
+                    grid-row: 1;
+                    h1{
+                        font-size: 150%;
+                    }
+                    h2{
+                        font-size: 150%;
+                        color: brown;
+                        padding-top: 20px;
+                    }
+                }
+                .row2{
+                    grid-row: 2;
+                    p{
+                        font-size: 150%;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        footer{
+            @extend %center-element;
+            position: relative;
+            background-color: white;
+            overflow: hidden;
+            font-size: 150%;
+            width: 100%;
+            height: 15%;
+            z-index: 3;
+            p{
+                padding-top: 25px;
+                padding-left: 60px;
+                color: grey;
+                a{
+                    text-decoration: none;
+                    color: grey;
+                }
+            }
+        }
+    }
+} 
