@@ -7,6 +7,7 @@ body{
     top: 50%;
     text-align: center;
 }
+    /*bouton1*/
     .button1{
         position: relative;
         display: inline-block;
@@ -21,6 +22,7 @@ body{
         color: black;
         }
     }
+    /*bouton2*/
     .button2{
         position: relative;
         display: inline-block;
@@ -35,19 +37,23 @@ body{
         color: black;
         font-size: 150%;
         }
-    } 
-    .button3{
-        position: relative;
+    }
+    /*bouton3*/
+    .area{
         display: inline-block;
-        text-decoration: none;
-        box-sizing: border-box;
-        padding: 15px;
-        color: white;
-        border: 5px solid white;
-        transition: all 1s linear;
-    &:hover{
-        background-color: white;
-        color: black;
-        transform: translateX(50%);
-        }
-    }    
+        &:hover .button3{
+            background-color: white;
+            color: black;
+            transform: translateX(50%);
+            }
+        .button3{
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            box-sizing: border-box;
+            padding: 15px;
+            color: white;
+            border: 5px solid white;
+            transition: all 1s linear;
+        }  
+    }

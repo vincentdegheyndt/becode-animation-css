@@ -8,6 +8,7 @@ body {
   text-align: center;
 }
 
+/*bouton1*/
 .button1 {
   position: relative;
   display: inline-block;
@@ -27,6 +28,7 @@ body {
   color: black;
 }
 
+/*bouton2*/
 .button2 {
   position: relative;
   display: inline-block;
@@ -47,7 +49,20 @@ body {
   font-size: 150%;
 }
 
-.button3 {
+/*bouton3*/
+.area {
+  display: inline-block;
+}
+
+.area:hover .button3 {
+  background-color: white;
+  color: black;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.area .button3 {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -59,13 +74,5 @@ body {
   -webkit-transition: all 1s linear;
   -o-transition: all 1s linear;
   transition: all 1s linear;
-}
-
-.button3:hover {
-  background-color: white;
-  color: black;
-  -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-          transform: translateX(50%);
 }
 /*# sourceMappingURL=style.css.map */
