@@ -1,0 +1,53 @@
+body{
+    overflow: hidden;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    text-align: center;
+}
+    .button1{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 15px;
+        color: white;
+        border: 5px solid white;
+        transition: all 0.5s linear;
+    &:hover{
+        background-color: white;
+        color: black;
+        }
+    }
+    .button2{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 15px;
+        color: white;
+        border: 5px solid white;
+        transition: all 0.5s linear;
+    &:hover{
+        background-color: white;
+        color: black;
+        font-size: 150%;
+        }
+    } 
+    .button3{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 15px;
+        color: white;
+        border: 5px solid white;
+        transition: all 1s linear;
+    &:hover{
+        background-color: white;
+        color: black;
+        transform: translateX(50%);
+        }
+    }    

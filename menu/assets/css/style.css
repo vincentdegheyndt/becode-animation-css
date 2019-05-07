@@ -1,0 +1,55 @@
+body {
+  background-color: lightgrey;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colonne {
+  position: fixed;
+  color: white;
+  background-color: grey;
+  border-radius: 20px;
+  list-style-type: none;
+  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  z-index: 2;
+}
+
+.tiroir {
+  position: absolute;
+  color: black;
+  font-size: 180%;
+  opacity: 0;
+  margin-top: -20px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.anim:hover {
+  background-color: white;
+}
+
+.anim:hover .tiroir {
+  -webkit-transform: translateX(84px);
+      -ms-transform: translateX(84px);
+          transform: translateX(84px);
+  opacity: 1;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*# sourceMappingURL=style.css.map */
